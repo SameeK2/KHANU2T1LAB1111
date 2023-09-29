@@ -1,6 +1,8 @@
 // Cat class definition
-public class Cat {
+import java.util.Scanner;
 
+public class Cat {
+    Scanner scan = new Scanner(System.in);
     // instance variables
     private String name;
     private int age;
@@ -15,7 +17,20 @@ public class Cat {
 
     // method that introduces the Cat
     public void introduce() {
-        System.out.println("Hello my name is " + name);
+
+        if(age < 7) {
+            System.out.println("Hi my name is  " + name + ", I am a younger cat");
+
+        }
+        else {
+            System.out.println("Hi, my name is " + name + ", I am a older cat");
+        }
+    }
+
+    public void greeting(){
+        System.out.println("Hello what is your name? ");
+        String name = scan.nextLine();
+        System.out.println("Hello " +  name);
     }
 
     // method that prints Cat info

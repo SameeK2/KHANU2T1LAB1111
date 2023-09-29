@@ -9,6 +9,7 @@ public class CatRunner {
 
         cat2.printCatInfo();
         cat2.introduce();
+        cat2.greeting();
 
 
 
